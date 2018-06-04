@@ -14,7 +14,7 @@ $(document).ready(function() {
     // code for storing and retrieving train information
     trainName = $("#trainNameInput").val().trim();
     destination = $("#destinationInput").val().trim();
-    trainTime = moment($("#trainTimeInput").val().trim(), "HH:mm", true)
+    trainTime = moment($("#trainTimeInput").val().trim(), "HH:mm", true);
     frequency = $("#frequencyInput").val().trim();
     
     // add values to database
