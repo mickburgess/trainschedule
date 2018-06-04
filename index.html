@@ -4,11 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Train Times</title>
+  <!--Train favicon added-->
   <link rel="icon" href="assets/images/train.png" type="images/png" />
+  <!--Adding Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!--Google font link-->
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <!--Additional stylesheet-->
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
+
 <body>
   <div class="container">
     <div class="jumbotron bg-primary text-white mt-3">
@@ -64,12 +69,12 @@
                 <div class="form-group">
                     <label for="trainTimeInput">First Train Time (HH:mm - military time)</label>
                     <input type="text" class="form-control" id="trainTimeInput">
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
                     <label for="frequencyInput">Frequency (min)</label>
                     <input type="text" class="form-control" id="frequencyInput">
-                  </div>
-                  <input class="btn btn-primary mb-3" type="submit" value="Submit" id="addTrain">
+                </div>
+                <input class="btn btn-primary mb-3" type="submit" value="Submit" id="addTrain">
             </form>
           </div>
         </div>
@@ -83,16 +88,16 @@
   <!--Add Firebase link-->
   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
   <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBN1qfWDvytrQJetUK0OXEJHmJBzYKo-l0",
-      authDomain: "traintimes-41e28.firebaseapp.com",
-      databaseURL: "https://traintimes-41e28.firebaseio.com",
-      projectId: "traintimes-41e28",
-      storageBucket: "",
-      messagingSenderId: "309146786943"
-    };
-    firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBN1qfWDvytrQJetUK0OXEJHmJBzYKo-l0",
+    authDomain: "traintimes-41e28.firebaseapp.com",
+    databaseURL: "https://traintimes-41e28.firebaseio.com",
+    projectId: "traintimes-41e28",
+    storageBucket: "traintimes-41e28.appspot.com",
+    messagingSenderId: "309146786943"
+  };
+  firebase.initializeApp(config);
   </script>
   
   <!--Bootstrap and jquery imports-->
@@ -103,6 +108,6 @@
   <script src="assets/javascript/train.js"></script>
 
   <!-- Link to Moment.js should go here -->
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
 </body>
 </html>
