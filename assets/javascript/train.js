@@ -14,7 +14,7 @@ $(document).ready(function() {
     // code for storing and retrieving train information
     trainName = $("#trainNameInput").val().trim();
     destination = $("#destinationInput").val().trim();
-    trainTime = moment($("#trainTimeInput").val().trim(), "HH:mm", true);
+    trainTime = $("#trainTimeInput").val().trim();
     frequency = $("#frequencyInput").val().trim();
     
     // add values to database
@@ -49,7 +49,7 @@ $(document).ready(function() {
     var firstTime = childSnapshot.val().firstTrainTime;
 
     // firstTime converted to hour:minute format
-    var firstTimeConverted = moment(firstTime, "HH:mm");
+    var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "days");
 
     // current time
     var currentTime = moment();
