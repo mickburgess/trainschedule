@@ -93,6 +93,8 @@ $(document).ready(function() {
 
     // append table row to table
     $("#tableBody").append(newRow);
+    }, function(errorObject) {
+      console.log("Errors handled: " + errorObject.code);
   });
   
 });
